@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie & TV Show Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .search-form {
+            margin-bottom: 20px;
+        }
+        .item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Movies & TV Shows</h1>
+    <form class="search-form" id="searchForm">
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="genre" placeholder="Genre">
+        <input type="text" id="type" placeholder="Type">
+        <input type="number" id="minRating" placeholder="Min Rating" step="0.1">
+        <input type="number" id="maxRating" placeholder="Max Rating" step="0.1">
+        <button type="submit">Search</button>
+    </form>
+    <div id="content"></div>
+    <script src="script.js"></script>
+</body>
+</html>
